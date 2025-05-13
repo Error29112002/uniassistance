@@ -67,6 +67,10 @@
     function navigateToStudentLogin() {
       window.location.href = "index.html";
     }
+    // Prevent redirect loop
+    if (window.location.pathname !== '/index.html') {
+    window.location.href = 'index.html';
+    }
   </script>
 </head>
 <body>
