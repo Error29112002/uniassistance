@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>University Assistance - Login</title>
+  <title>Redirecting...</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -79,6 +79,11 @@
 
       // Redirect to dashboard
       window.location.href = "dashboard.html";
+
+      // Check if the user is already on main.html
+      if (window.location.pathname !== '/main.html') {
+      window.location.href = 'main.html';
+      }
     }
 
     // Optional: Press "Enter" to trigger login
